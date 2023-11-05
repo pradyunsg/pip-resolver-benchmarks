@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug Reports (and other issues)
+    url: https://github.com/pradyunsg/pip-resolver-benchmarks/discussions/categories/potential-issue
+    about: Possible bugs may be raised as a "Potential Issue" discussion.
+  - name: Feature Request / Enhancement
+    url: https://github.com/pradyunsg/pip-resolver-benchmarks/discussions/categories/ideas
+    about: Feature requests may be raised as an "Ideas" discussion.
