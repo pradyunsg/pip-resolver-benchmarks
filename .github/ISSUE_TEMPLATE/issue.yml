@@ -13,11 +13,9 @@ body:
       label: Reproducer
       description: Steps to reproduce the issue. Please attach screenshots as well.
       value: |
-        1. Build Sphinx documentation at '...' (include build instructions)
-        2. Go to '...'
-        3. Click on '...'
-        4. Scroll down to '...'
-        5. See wrong thing.
+        1. Run `nox -s fetch -- sampleproject`.
+        1. ???
+        1. Profit.
     validations:
       required: true
   - type: textarea
