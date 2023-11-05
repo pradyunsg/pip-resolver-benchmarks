@@ -1,0 +1,7 @@
+pydantic
+rich
+packaging >= 23.2
+mousebender
+typing_extensions
+hishel
+pip @ https://github.com/cosmicexplorer/pip/archive/refs/heads/lazier-wheel.zip
