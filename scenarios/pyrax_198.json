@@ -3,31 +3,587 @@
     "requirements": [
       "pyrax==1.9.8"
     ],
+    "timestamp": "2023-12-01T18:24:53.433295",
     "allow_sdists_for": [
-      "contextvars",
-      "dbus-python",
-      "ip-associations-python-novaclient-ext",
       "markerlib",
-      "multidict",
-      "netifaces",
-      "ordereddict",
-      "os-diskconfig-python-novaclient-ext",
-      "os-networksv2-python-novaclient-ext",
-      "os-virtual-interfacesv2-python-novaclient-ext",
-      "positional",
-      "prettytable",
-      "rackspace-auth-openstack",
       "rackspace-novaclient",
-      "rax-backup-schedule-python-novaclient-ext",
-      "rax-default-network-flags-python-novaclient-ext",
-      "rax-instance-backup-python-novaclient-ext",
-      "rax-networks-python-novaclient-ext",
-      "rax-networks-python-novaclient-ext",
+      "prettytable",
+      "netifaces",
+      "os-diskconfig-python-novaclient-ext",
+      "dbus-python",
+      "functools32",
       "rax-scheduled-images-python-novaclient-ext",
+      "rax-networks-python-novaclient-ext",
+      "contextvars",
+      "os-virtual-interfacesv2-python-novaclient-ext",
+      "ordereddict",
+      "rax-backup-schedule-python-novaclient-ext",
+      "multidict",
+      "rax-instance-backup-python-novaclient-ext",
+      "ip-associations-python-novaclient-ext",
+      "rackspace-auth-openstack",
       "rax-services-python-novaclient-ext",
-      "scandir",
-      "functools32"
-    ]
+      "os-networksv2-python-novaclient-ext",
+      "rax-default-network-flags-python-novaclient-ext",
+      "positional",
+      "scandir"
+    ],
+    "environment": {
+      "markers": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.6",
+        "os_name": "posix",
+        "platform_machine": "arm64",
+        "platform_release": "23.1.0",
+        "platform_system": "Darwin",
+        "platform_version": "Darwin Kernel Version 23.1.0: Mon Oct  9 21:28:12 PDT 2023; root:xnu-10002.41.9~6/RELEASE_ARM64_T8103",
+        "python_full_version": "3.11.6",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "darwin"
+      },
+      "tags": [
+        "cp311-cp311-macosx_14_0_arm64",
+        "cp311-cp311-macosx_14_0_universal2",
+        "cp311-cp311-macosx_13_0_arm64",
+        "cp311-cp311-macosx_13_0_universal2",
+        "cp311-cp311-macosx_12_0_arm64",
+        "cp311-cp311-macosx_12_0_universal2",
+        "cp311-cp311-macosx_11_0_arm64",
+        "cp311-cp311-macosx_11_0_universal2",
+        "cp311-cp311-macosx_10_16_universal2",
+        "cp311-cp311-macosx_10_15_universal2",
+        "cp311-cp311-macosx_10_14_universal2",
+        "cp311-cp311-macosx_10_13_universal2",
+        "cp311-cp311-macosx_10_12_universal2",
+        "cp311-cp311-macosx_10_11_universal2",
+        "cp311-cp311-macosx_10_10_universal2",
+        "cp311-cp311-macosx_10_9_universal2",
+        "cp311-cp311-macosx_10_8_universal2",
+        "cp311-cp311-macosx_10_7_universal2",
+        "cp311-cp311-macosx_10_6_universal2",
+        "cp311-cp311-macosx_10_5_universal2",
+        "cp311-cp311-macosx_10_4_universal2",
+        "cp311-abi3-macosx_14_0_arm64",
+        "cp311-abi3-macosx_14_0_universal2",
+        "cp311-abi3-macosx_13_0_arm64",
+        "cp311-abi3-macosx_13_0_universal2",
+        "cp311-abi3-macosx_12_0_arm64",
+        "cp311-abi3-macosx_12_0_universal2",
+        "cp311-abi3-macosx_11_0_arm64",
+        "cp311-abi3-macosx_11_0_universal2",
+        "cp311-abi3-macosx_10_16_universal2",
+        "cp311-abi3-macosx_10_15_universal2",
+        "cp311-abi3-macosx_10_14_universal2",
+        "cp311-abi3-macosx_10_13_universal2",
+        "cp311-abi3-macosx_10_12_universal2",
+        "cp311-abi3-macosx_10_11_universal2",
+        "cp311-abi3-macosx_10_10_universal2",
+        "cp311-abi3-macosx_10_9_universal2",
+        "cp311-abi3-macosx_10_8_universal2",
+        "cp311-abi3-macosx_10_7_universal2",
+        "cp311-abi3-macosx_10_6_universal2",
+        "cp311-abi3-macosx_10_5_universal2",
+        "cp311-abi3-macosx_10_4_universal2",
+        "cp311-none-macosx_14_0_arm64",
+        "cp311-none-macosx_14_0_universal2",
+        "cp311-none-macosx_13_0_arm64",
+        "cp311-none-macosx_13_0_universal2",
+        "cp311-none-macosx_12_0_arm64",
+        "cp311-none-macosx_12_0_universal2",
+        "cp311-none-macosx_11_0_arm64",
+        "cp311-none-macosx_11_0_universal2",
+        "cp311-none-macosx_10_16_universal2",
+        "cp311-none-macosx_10_15_universal2",
+        "cp311-none-macosx_10_14_universal2",
+        "cp311-none-macosx_10_13_universal2",
+        "cp311-none-macosx_10_12_universal2",
+        "cp311-none-macosx_10_11_universal2",
+        "cp311-none-macosx_10_10_universal2",
+        "cp311-none-macosx_10_9_universal2",
+        "cp311-none-macosx_10_8_universal2",
+        "cp311-none-macosx_10_7_universal2",
+        "cp311-none-macosx_10_6_universal2",
+        "cp311-none-macosx_10_5_universal2",
+        "cp311-none-macosx_10_4_universal2",
+        "cp310-abi3-macosx_14_0_arm64",
+        "cp310-abi3-macosx_14_0_universal2",
+        "cp310-abi3-macosx_13_0_arm64",
+        "cp310-abi3-macosx_13_0_universal2",
+        "cp310-abi3-macosx_12_0_arm64",
+        "cp310-abi3-macosx_12_0_universal2",
+        "cp310-abi3-macosx_11_0_arm64",
+        "cp310-abi3-macosx_11_0_universal2",
+        "cp310-abi3-macosx_10_16_universal2",
+        "cp310-abi3-macosx_10_15_universal2",
+        "cp310-abi3-macosx_10_14_universal2",
+        "cp310-abi3-macosx_10_13_universal2",
+        "cp310-abi3-macosx_10_12_universal2",
+        "cp310-abi3-macosx_10_11_universal2",
+        "cp310-abi3-macosx_10_10_universal2",
+        "cp310-abi3-macosx_10_9_universal2",
+        "cp310-abi3-macosx_10_8_universal2",
+        "cp310-abi3-macosx_10_7_universal2",
+        "cp310-abi3-macosx_10_6_universal2",
+        "cp310-abi3-macosx_10_5_universal2",
+        "cp310-abi3-macosx_10_4_universal2",
+        "cp39-abi3-macosx_14_0_arm64",
+        "cp39-abi3-macosx_14_0_universal2",
+        "cp39-abi3-macosx_13_0_arm64",
+        "cp39-abi3-macosx_13_0_universal2",
+        "cp39-abi3-macosx_12_0_arm64",
+        "cp39-abi3-macosx_12_0_universal2",
+        "cp39-abi3-macosx_11_0_arm64",
+        "cp39-abi3-macosx_11_0_universal2",
+        "cp39-abi3-macosx_10_16_universal2",
+        "cp39-abi3-macosx_10_15_universal2",
+        "cp39-abi3-macosx_10_14_universal2",
+        "cp39-abi3-macosx_10_13_universal2",
+        "cp39-abi3-macosx_10_12_universal2",
+        "cp39-abi3-macosx_10_11_universal2",
+        "cp39-abi3-macosx_10_10_universal2",
+        "cp39-abi3-macosx_10_9_universal2",
+        "cp39-abi3-macosx_10_8_universal2",
+        "cp39-abi3-macosx_10_7_universal2",
+        "cp39-abi3-macosx_10_6_universal2",
+        "cp39-abi3-macosx_10_5_universal2",
+        "cp39-abi3-macosx_10_4_universal2",
+        "cp38-abi3-macosx_14_0_arm64",
+        "cp38-abi3-macosx_14_0_universal2",
+        "cp38-abi3-macosx_13_0_arm64",
+        "cp38-abi3-macosx_13_0_universal2",
+        "cp38-abi3-macosx_12_0_arm64",
+        "cp38-abi3-macosx_12_0_universal2",
+        "cp38-abi3-macosx_11_0_arm64",
+        "cp38-abi3-macosx_11_0_universal2",
+        "cp38-abi3-macosx_10_16_universal2",
+        "cp38-abi3-macosx_10_15_universal2",
+        "cp38-abi3-macosx_10_14_universal2",
+        "cp38-abi3-macosx_10_13_universal2",
+        "cp38-abi3-macosx_10_12_universal2",
+        "cp38-abi3-macosx_10_11_universal2",
+        "cp38-abi3-macosx_10_10_universal2",
+        "cp38-abi3-macosx_10_9_universal2",
+        "cp38-abi3-macosx_10_8_universal2",
+        "cp38-abi3-macosx_10_7_universal2",
+        "cp38-abi3-macosx_10_6_universal2",
+        "cp38-abi3-macosx_10_5_universal2",
+        "cp38-abi3-macosx_10_4_universal2",
+        "cp37-abi3-macosx_14_0_arm64",
+        "cp37-abi3-macosx_14_0_universal2",
+        "cp37-abi3-macosx_13_0_arm64",
+        "cp37-abi3-macosx_13_0_universal2",
+        "cp37-abi3-macosx_12_0_arm64",
+        "cp37-abi3-macosx_12_0_universal2",
+        "cp37-abi3-macosx_11_0_arm64",
+        "cp37-abi3-macosx_11_0_universal2",
+        "cp37-abi3-macosx_10_16_universal2",
+        "cp37-abi3-macosx_10_15_universal2",
+        "cp37-abi3-macosx_10_14_universal2",
+        "cp37-abi3-macosx_10_13_universal2",
+        "cp37-abi3-macosx_10_12_universal2",
+        "cp37-abi3-macosx_10_11_universal2",
+        "cp37-abi3-macosx_10_10_universal2",
+        "cp37-abi3-macosx_10_9_universal2",
+        "cp37-abi3-macosx_10_8_universal2",
+        "cp37-abi3-macosx_10_7_universal2",
+        "cp37-abi3-macosx_10_6_universal2",
+        "cp37-abi3-macosx_10_5_universal2",
+        "cp37-abi3-macosx_10_4_universal2",
+        "cp36-abi3-macosx_14_0_arm64",
+        "cp36-abi3-macosx_14_0_universal2",
+        "cp36-abi3-macosx_13_0_arm64",
+        "cp36-abi3-macosx_13_0_universal2",
+        "cp36-abi3-macosx_12_0_arm64",
+        "cp36-abi3-macosx_12_0_universal2",
+        "cp36-abi3-macosx_11_0_arm64",
+        "cp36-abi3-macosx_11_0_universal2",
+        "cp36-abi3-macosx_10_16_universal2",
+        "cp36-abi3-macosx_10_15_universal2",
+        "cp36-abi3-macosx_10_14_universal2",
+        "cp36-abi3-macosx_10_13_universal2",
+        "cp36-abi3-macosx_10_12_universal2",
+        "cp36-abi3-macosx_10_11_universal2",
+        "cp36-abi3-macosx_10_10_universal2",
+        "cp36-abi3-macosx_10_9_universal2",
+        "cp36-abi3-macosx_10_8_universal2",
+        "cp36-abi3-macosx_10_7_universal2",
+        "cp36-abi3-macosx_10_6_universal2",
+        "cp36-abi3-macosx_10_5_universal2",
+        "cp36-abi3-macosx_10_4_universal2",
+        "cp35-abi3-macosx_14_0_arm64",
+        "cp35-abi3-macosx_14_0_universal2",
+        "cp35-abi3-macosx_13_0_arm64",
+        "cp35-abi3-macosx_13_0_universal2",
+        "cp35-abi3-macosx_12_0_arm64",
+        "cp35-abi3-macosx_12_0_universal2",
+        "cp35-abi3-macosx_11_0_arm64",
+        "cp35-abi3-macosx_11_0_universal2",
+        "cp35-abi3-macosx_10_16_universal2",
+        "cp35-abi3-macosx_10_15_universal2",
+        "cp35-abi3-macosx_10_14_universal2",
+        "cp35-abi3-macosx_10_13_universal2",
+        "cp35-abi3-macosx_10_12_universal2",
+        "cp35-abi3-macosx_10_11_universal2",
+        "cp35-abi3-macosx_10_10_universal2",
+        "cp35-abi3-macosx_10_9_universal2",
+        "cp35-abi3-macosx_10_8_universal2",
+        "cp35-abi3-macosx_10_7_universal2",
+        "cp35-abi3-macosx_10_6_universal2",
+        "cp35-abi3-macosx_10_5_universal2",
+        "cp35-abi3-macosx_10_4_universal2",
+        "cp34-abi3-macosx_14_0_arm64",
+        "cp34-abi3-macosx_14_0_universal2",
+        "cp34-abi3-macosx_13_0_arm64",
+        "cp34-abi3-macosx_13_0_universal2",
+        "cp34-abi3-macosx_12_0_arm64",
+        "cp34-abi3-macosx_12_0_universal2",
+        "cp34-abi3-macosx_11_0_arm64",
+        "cp34-abi3-macosx_11_0_universal2",
+        "cp34-abi3-macosx_10_16_universal2",
+        "cp34-abi3-macosx_10_15_universal2",
+        "cp34-abi3-macosx_10_14_universal2",
+        "cp34-abi3-macosx_10_13_universal2",
+        "cp34-abi3-macosx_10_12_universal2",
+        "cp34-abi3-macosx_10_11_universal2",
+        "cp34-abi3-macosx_10_10_universal2",
+        "cp34-abi3-macosx_10_9_universal2",
+        "cp34-abi3-macosx_10_8_universal2",
+        "cp34-abi3-macosx_10_7_universal2",
+        "cp34-abi3-macosx_10_6_universal2",
+        "cp34-abi3-macosx_10_5_universal2",
+        "cp34-abi3-macosx_10_4_universal2",
+        "cp33-abi3-macosx_14_0_arm64",
+        "cp33-abi3-macosx_14_0_universal2",
+        "cp33-abi3-macosx_13_0_arm64",
+        "cp33-abi3-macosx_13_0_universal2",
+        "cp33-abi3-macosx_12_0_arm64",
+        "cp33-abi3-macosx_12_0_universal2",
+        "cp33-abi3-macosx_11_0_arm64",
+        "cp33-abi3-macosx_11_0_universal2",
+        "cp33-abi3-macosx_10_16_universal2",
+        "cp33-abi3-macosx_10_15_universal2",
+        "cp33-abi3-macosx_10_14_universal2",
+        "cp33-abi3-macosx_10_13_universal2",
+        "cp33-abi3-macosx_10_12_universal2",
+        "cp33-abi3-macosx_10_11_universal2",
+        "cp33-abi3-macosx_10_10_universal2",
+        "cp33-abi3-macosx_10_9_universal2",
+        "cp33-abi3-macosx_10_8_universal2",
+        "cp33-abi3-macosx_10_7_universal2",
+        "cp33-abi3-macosx_10_6_universal2",
+        "cp33-abi3-macosx_10_5_universal2",
+        "cp33-abi3-macosx_10_4_universal2",
+        "cp32-abi3-macosx_14_0_arm64",
+        "cp32-abi3-macosx_14_0_universal2",
+        "cp32-abi3-macosx_13_0_arm64",
+        "cp32-abi3-macosx_13_0_universal2",
+        "cp32-abi3-macosx_12_0_arm64",
+        "cp32-abi3-macosx_12_0_universal2",
+        "cp32-abi3-macosx_11_0_arm64",
+        "cp32-abi3-macosx_11_0_universal2",
+        "cp32-abi3-macosx_10_16_universal2",
+        "cp32-abi3-macosx_10_15_universal2",
+        "cp32-abi3-macosx_10_14_universal2",
+        "cp32-abi3-macosx_10_13_universal2",
+        "cp32-abi3-macosx_10_12_universal2",
+        "cp32-abi3-macosx_10_11_universal2",
+        "cp32-abi3-macosx_10_10_universal2",
+        "cp32-abi3-macosx_10_9_universal2",
+        "cp32-abi3-macosx_10_8_universal2",
+        "cp32-abi3-macosx_10_7_universal2",
+        "cp32-abi3-macosx_10_6_universal2",
+        "cp32-abi3-macosx_10_5_universal2",
+        "cp32-abi3-macosx_10_4_universal2",
+        "py311-none-macosx_14_0_arm64",
+        "py311-none-macosx_14_0_universal2",
+        "py311-none-macosx_13_0_arm64",
+        "py311-none-macosx_13_0_universal2",
+        "py311-none-macosx_12_0_arm64",
+        "py311-none-macosx_12_0_universal2",
+        "py311-none-macosx_11_0_arm64",
+        "py311-none-macosx_11_0_universal2",
+        "py311-none-macosx_10_16_universal2",
+        "py311-none-macosx_10_15_universal2",
+        "py311-none-macosx_10_14_universal2",
+        "py311-none-macosx_10_13_universal2",
+        "py311-none-macosx_10_12_universal2",
+        "py311-none-macosx_10_11_universal2",
+        "py311-none-macosx_10_10_universal2",
+        "py311-none-macosx_10_9_universal2",
+        "py311-none-macosx_10_8_universal2",
+        "py311-none-macosx_10_7_universal2",
+        "py311-none-macosx_10_6_universal2",
+        "py311-none-macosx_10_5_universal2",
+        "py311-none-macosx_10_4_universal2",
+        "py3-none-macosx_14_0_arm64",
+        "py3-none-macosx_14_0_universal2",
+        "py3-none-macosx_13_0_arm64",
+        "py3-none-macosx_13_0_universal2",
+        "py3-none-macosx_12_0_arm64",
+        "py3-none-macosx_12_0_universal2",
+        "py3-none-macosx_11_0_arm64",
+        "py3-none-macosx_11_0_universal2",
+        "py3-none-macosx_10_16_universal2",
+        "py3-none-macosx_10_15_universal2",
+        "py3-none-macosx_10_14_universal2",
+        "py3-none-macosx_10_13_universal2",
+        "py3-none-macosx_10_12_universal2",
+        "py3-none-macosx_10_11_universal2",
+        "py3-none-macosx_10_10_universal2",
+        "py3-none-macosx_10_9_universal2",
+        "py3-none-macosx_10_8_universal2",
+        "py3-none-macosx_10_7_universal2",
+        "py3-none-macosx_10_6_universal2",
+        "py3-none-macosx_10_5_universal2",
+        "py3-none-macosx_10_4_universal2",
+        "py310-none-macosx_14_0_arm64",
+        "py310-none-macosx_14_0_universal2",
+        "py310-none-macosx_13_0_arm64",
+        "py310-none-macosx_13_0_universal2",
+        "py310-none-macosx_12_0_arm64",
+        "py310-none-macosx_12_0_universal2",
+        "py310-none-macosx_11_0_arm64",
+        "py310-none-macosx_11_0_universal2",
+        "py310-none-macosx_10_16_universal2",
+        "py310-none-macosx_10_15_universal2",
+        "py310-none-macosx_10_14_universal2",
+        "py310-none-macosx_10_13_universal2",
+        "py310-none-macosx_10_12_universal2",
+        "py310-none-macosx_10_11_universal2",
+        "py310-none-macosx_10_10_universal2",
+        "py310-none-macosx_10_9_universal2",
+        "py310-none-macosx_10_8_universal2",
+        "py310-none-macosx_10_7_universal2",
+        "py310-none-macosx_10_6_universal2",
+        "py310-none-macosx_10_5_universal2",
+        "py310-none-macosx_10_4_universal2",
+        "py39-none-macosx_14_0_arm64",
+        "py39-none-macosx_14_0_universal2",
+        "py39-none-macosx_13_0_arm64",
+        "py39-none-macosx_13_0_universal2",
+        "py39-none-macosx_12_0_arm64",
+        "py39-none-macosx_12_0_universal2",
+        "py39-none-macosx_11_0_arm64",
+        "py39-none-macosx_11_0_universal2",
+        "py39-none-macosx_10_16_universal2",
+        "py39-none-macosx_10_15_universal2",
+        "py39-none-macosx_10_14_universal2",
+        "py39-none-macosx_10_13_universal2",
+        "py39-none-macosx_10_12_universal2",
+        "py39-none-macosx_10_11_universal2",
+        "py39-none-macosx_10_10_universal2",
+        "py39-none-macosx_10_9_universal2",
+        "py39-none-macosx_10_8_universal2",
+        "py39-none-macosx_10_7_universal2",
+        "py39-none-macosx_10_6_universal2",
+        "py39-none-macosx_10_5_universal2",
+        "py39-none-macosx_10_4_universal2",
+        "py38-none-macosx_14_0_arm64",
+        "py38-none-macosx_14_0_universal2",
+        "py38-none-macosx_13_0_arm64",
+        "py38-none-macosx_13_0_universal2",
+        "py38-none-macosx_12_0_arm64",
+        "py38-none-macosx_12_0_universal2",
+        "py38-none-macosx_11_0_arm64",
+        "py38-none-macosx_11_0_universal2",
+        "py38-none-macosx_10_16_universal2",
+        "py38-none-macosx_10_15_universal2",
+        "py38-none-macosx_10_14_universal2",
+        "py38-none-macosx_10_13_universal2",
+        "py38-none-macosx_10_12_universal2",
+        "py38-none-macosx_10_11_universal2",
+        "py38-none-macosx_10_10_universal2",
+        "py38-none-macosx_10_9_universal2",
+        "py38-none-macosx_10_8_universal2",
+        "py38-none-macosx_10_7_universal2",
+        "py38-none-macosx_10_6_universal2",
+        "py38-none-macosx_10_5_universal2",
+        "py38-none-macosx_10_4_universal2",
+        "py37-none-macosx_14_0_arm64",
+        "py37-none-macosx_14_0_universal2",
+        "py37-none-macosx_13_0_arm64",
+        "py37-none-macosx_13_0_universal2",
+        "py37-none-macosx_12_0_arm64",
+        "py37-none-macosx_12_0_universal2",
+        "py37-none-macosx_11_0_arm64",
+        "py37-none-macosx_11_0_universal2",
+        "py37-none-macosx_10_16_universal2",
+        "py37-none-macosx_10_15_universal2",
+        "py37-none-macosx_10_14_universal2",
+        "py37-none-macosx_10_13_universal2",
+        "py37-none-macosx_10_12_universal2",
+        "py37-none-macosx_10_11_universal2",
+        "py37-none-macosx_10_10_universal2",
+        "py37-none-macosx_10_9_universal2",
+        "py37-none-macosx_10_8_universal2",
+        "py37-none-macosx_10_7_universal2",
+        "py37-none-macosx_10_6_universal2",
+        "py37-none-macosx_10_5_universal2",
+        "py37-none-macosx_10_4_universal2",
+        "py36-none-macosx_14_0_arm64",
+        "py36-none-macosx_14_0_universal2",
+        "py36-none-macosx_13_0_arm64",
+        "py36-none-macosx_13_0_universal2",
+        "py36-none-macosx_12_0_arm64",
+        "py36-none-macosx_12_0_universal2",
+        "py36-none-macosx_11_0_arm64",
+        "py36-none-macosx_11_0_universal2",
+        "py36-none-macosx_10_16_universal2",
+        "py36-none-macosx_10_15_universal2",
+        "py36-none-macosx_10_14_universal2",
+        "py36-none-macosx_10_13_universal2",
+        "py36-none-macosx_10_12_universal2",
+        "py36-none-macosx_10_11_universal2",
+        "py36-none-macosx_10_10_universal2",
+        "py36-none-macosx_10_9_universal2",
+        "py36-none-macosx_10_8_universal2",
+        "py36-none-macosx_10_7_universal2",
+        "py36-none-macosx_10_6_universal2",
+        "py36-none-macosx_10_5_universal2",
+        "py36-none-macosx_10_4_universal2",
+        "py35-none-macosx_14_0_arm64",
+        "py35-none-macosx_14_0_universal2",
+        "py35-none-macosx_13_0_arm64",
+        "py35-none-macosx_13_0_universal2",
+        "py35-none-macosx_12_0_arm64",
+        "py35-none-macosx_12_0_universal2",
+        "py35-none-macosx_11_0_arm64",
+        "py35-none-macosx_11_0_universal2",
+        "py35-none-macosx_10_16_universal2",
+        "py35-none-macosx_10_15_universal2",
+        "py35-none-macosx_10_14_universal2",
+        "py35-none-macosx_10_13_universal2",
+        "py35-none-macosx_10_12_universal2",
+        "py35-none-macosx_10_11_universal2",
+        "py35-none-macosx_10_10_universal2",
+        "py35-none-macosx_10_9_universal2",
+        "py35-none-macosx_10_8_universal2",
+        "py35-none-macosx_10_7_universal2",
+        "py35-none-macosx_10_6_universal2",
+        "py35-none-macosx_10_5_universal2",
+        "py35-none-macosx_10_4_universal2",
+        "py34-none-macosx_14_0_arm64",
+        "py34-none-macosx_14_0_universal2",
+        "py34-none-macosx_13_0_arm64",
+        "py34-none-macosx_13_0_universal2",
+        "py34-none-macosx_12_0_arm64",
+        "py34-none-macosx_12_0_universal2",
+        "py34-none-macosx_11_0_arm64",
+        "py34-none-macosx_11_0_universal2",
+        "py34-none-macosx_10_16_universal2",
+        "py34-none-macosx_10_15_universal2",
+        "py34-none-macosx_10_14_universal2",
+        "py34-none-macosx_10_13_universal2",
+        "py34-none-macosx_10_12_universal2",
+        "py34-none-macosx_10_11_universal2",
+        "py34-none-macosx_10_10_universal2",
+        "py34-none-macosx_10_9_universal2",
+        "py34-none-macosx_10_8_universal2",
+        "py34-none-macosx_10_7_universal2",
+        "py34-none-macosx_10_6_universal2",
+        "py34-none-macosx_10_5_universal2",
+        "py34-none-macosx_10_4_universal2",
+        "py33-none-macosx_14_0_arm64",
+        "py33-none-macosx_14_0_universal2",
+        "py33-none-macosx_13_0_arm64",
+        "py33-none-macosx_13_0_universal2",
+        "py33-none-macosx_12_0_arm64",
+        "py33-none-macosx_12_0_universal2",
+        "py33-none-macosx_11_0_arm64",
+        "py33-none-macosx_11_0_universal2",
+        "py33-none-macosx_10_16_universal2",
+        "py33-none-macosx_10_15_universal2",
+        "py33-none-macosx_10_14_universal2",
+        "py33-none-macosx_10_13_universal2",
+        "py33-none-macosx_10_12_universal2",
+        "py33-none-macosx_10_11_universal2",
+        "py33-none-macosx_10_10_universal2",
+        "py33-none-macosx_10_9_universal2",
+        "py33-none-macosx_10_8_universal2",
+        "py33-none-macosx_10_7_universal2",
+        "py33-none-macosx_10_6_universal2",
+        "py33-none-macosx_10_5_universal2",
+        "py33-none-macosx_10_4_universal2",
+        "py32-none-macosx_14_0_arm64",
+        "py32-none-macosx_14_0_universal2",
+        "py32-none-macosx_13_0_arm64",
+        "py32-none-macosx_13_0_universal2",
+        "py32-none-macosx_12_0_arm64",
+        "py32-none-macosx_12_0_universal2",
+        "py32-none-macosx_11_0_arm64",
+        "py32-none-macosx_11_0_universal2",
+        "py32-none-macosx_10_16_universal2",
+        "py32-none-macosx_10_15_universal2",
+        "py32-none-macosx_10_14_universal2",
+        "py32-none-macosx_10_13_universal2",
+        "py32-none-macosx_10_12_universal2",
+        "py32-none-macosx_10_11_universal2",
+        "py32-none-macosx_10_10_universal2",
+        "py32-none-macosx_10_9_universal2",
+        "py32-none-macosx_10_8_universal2",
+        "py32-none-macosx_10_7_universal2",
+        "py32-none-macosx_10_6_universal2",
+        "py32-none-macosx_10_5_universal2",
+        "py32-none-macosx_10_4_universal2",
+        "py31-none-macosx_14_0_arm64",
+        "py31-none-macosx_14_0_universal2",
+        "py31-none-macosx_13_0_arm64",
+        "py31-none-macosx_13_0_universal2",
+        "py31-none-macosx_12_0_arm64",
+        "py31-none-macosx_12_0_universal2",
+        "py31-none-macosx_11_0_arm64",
+        "py31-none-macosx_11_0_universal2",
+        "py31-none-macosx_10_16_universal2",
+        "py31-none-macosx_10_15_universal2",
+        "py31-none-macosx_10_14_universal2",
+        "py31-none-macosx_10_13_universal2",
+        "py31-none-macosx_10_12_universal2",
+        "py31-none-macosx_10_11_universal2",
+        "py31-none-macosx_10_10_universal2",
+        "py31-none-macosx_10_9_universal2",
+        "py31-none-macosx_10_8_universal2",
+        "py31-none-macosx_10_7_universal2",
+        "py31-none-macosx_10_6_universal2",
+        "py31-none-macosx_10_5_universal2",
+        "py31-none-macosx_10_4_universal2",
+        "py30-none-macosx_14_0_arm64",
+        "py30-none-macosx_14_0_universal2",
+        "py30-none-macosx_13_0_arm64",
+        "py30-none-macosx_13_0_universal2",
+        "py30-none-macosx_12_0_arm64",
+        "py30-none-macosx_12_0_universal2",
+        "py30-none-macosx_11_0_arm64",
+        "py30-none-macosx_11_0_universal2",
+        "py30-none-macosx_10_16_universal2",
+        "py30-none-macosx_10_15_universal2",
+        "py30-none-macosx_10_14_universal2",
+        "py30-none-macosx_10_13_universal2",
+        "py30-none-macosx_10_12_universal2",
+        "py30-none-macosx_10_11_universal2",
+        "py30-none-macosx_10_10_universal2",
+        "py30-none-macosx_10_9_universal2",
+        "py30-none-macosx_10_8_universal2",
+        "py30-none-macosx_10_7_universal2",
+        "py30-none-macosx_10_6_universal2",
+        "py30-none-macosx_10_5_universal2",
+        "py30-none-macosx_10_4_universal2",
+        "cp311-none-any",
+        "py311-none-any",
+        "py3-none-any",
+        "py310-none-any",
+        "py39-none-any",
+        "py38-none-any",
+        "py37-none-any",
+        "py36-none-any",
+        "py35-none-any",
+        "py34-none-any",
+        "py33-none-any",
+        "py32-none-any",
+        "py31-none-any",
+        "py30-none-any"
+      ]
+    }
   },
   "packages": {
     "pyrax": {
@@ -1875,6 +2431,40 @@
       }
     },
     "keyring": {
+      "24.3.0": {
+        "depends_by_extra": {
+          "": [
+            "jaraco.classes",
+            "importlib-metadata>=4.11.4",
+            "importlib-resources",
+            "SecretStorage>=3.2",
+            "jeepney>=0.4.2",
+            "pywin32-ctypes>=0.2.0"
+          ],
+          "completion": [
+            "shtab>=1.1.0"
+          ],
+          "docs": [
+            "sphinx>=3.5",
+            "sphinx<7.2.5",
+            "jaraco.packaging>=9.3",
+            "rst.linker>=1.9",
+            "furo",
+            "sphinx-lint",
+            "jaraco.tidelift>=1.4"
+          ],
+          "testing": [
+            "pytest>=6",
+            "pytest-checkdocs>=2.4",
+            "pytest-cov",
+            "pytest-enabler>=2.2",
+            "pytest-ruff",
+            "pytest-black>=0.3.7",
+            "pytest-mypy>=0.9.1"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "24.2.0": {
         "depends_by_extra": {
           "": [
@@ -6787,6 +7377,53 @@
       }
     },
     "keystoneauth1": {
+      "5.4.0": {
+        "depends_by_extra": {
+          "": [
+            "iso8601>=0.1.11",
+            "os-service-types>=1.2.0",
+            "pbr!=2.1.0,>=2.0.0",
+            "requests>=2.14.2",
+            "stevedore>=1.20.0"
+          ],
+          "betamax": [
+            "betamax>=0.7.0",
+            "fixtures>=3.0.0",
+            "mock>=2.0.0"
+          ],
+          "kerberos": [
+            "requests-kerberos>=0.8.0"
+          ],
+          "oauth1": [
+            "oauthlib>=0.6.2"
+          ],
+          "saml2": [
+            "lxml>=4.2.0"
+          ],
+          "test": [
+            "PyYAML>=3.12",
+            "bandit<1.6.0,>=1.1.0",
+            "betamax>=0.7.0",
+            "coverage!=4.4,>=4.0",
+            "fixtures>=3.0.0",
+            "flake8-docstrings~=1.6.0",
+            "flake8-import-order>=0.17.1",
+            "hacking~=4.1.0",
+            "lxml>=4.2.0",
+            "oauthlib>=0.6.2",
+            "oslo.config>=5.2.0",
+            "oslo.utils>=3.33.0",
+            "oslotest>=3.2.0",
+            "reno>=3.1.0",
+            "requests-kerberos>=0.8.0",
+            "requests-mock>=1.2.0",
+            "stestr>=1.0.0",
+            "testresources>=2.0.0",
+            "testtools>=2.2.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "5.3.0": {
         "depends_by_extra": {
           "": [
@@ -9911,6 +10548,14 @@
       }
     },
     "oslo-i18n": {
+      "6.2.0": {
+        "depends_by_extra": {
+          "": [
+            "pbr!=2.1.0,>=2.0.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "6.1.0": {
         "depends_by_extra": {
           "": [
@@ -11248,6 +11893,23 @@
       }
     },
     "oslo-utils": {
+      "6.3.0": {
+        "depends_by_extra": {
+          "": [
+            "PyYAML>=3.13",
+            "debtcollector>=1.2.0",
+            "iso8601>=0.1.11",
+            "netaddr>=0.7.18",
+            "netifaces>=0.10.4",
+            "oslo.i18n>=3.15.3",
+            "packaging>=20.4",
+            "pyparsing>=2.1.0",
+            "pytz>=2013.6",
+            "tzdata>=2022.4"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "6.2.1": {
         "depends_by_extra": {
           "": [
@@ -13409,6 +14071,10 @@
       }
     },
     "pbr": {
+      "6.0.0": {
+        "depends_by_extra": {},
+        "requires_python": ">=2.6"
+      },
       "5.11.1": {
         "depends_by_extra": {},
         "requires_python": ">=2.6"
@@ -14245,6 +14911,10 @@
         "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.5"
       },
       "3.18.2": {
+        "depends_by_extra": {},
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.5"
+      },
+      "3.18.1": {
         "depends_by_extra": {},
         "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.5"
       }
@@ -16372,6 +17042,41 @@
       }
     },
     "importlib-metadata": {
+      "6.9.0": {
+        "depends_by_extra": {
+          "": [
+            "zipp>=0.5",
+            "typing-extensions>=3.6.4"
+          ],
+          "docs": [
+            "sphinx>=3.5",
+            "sphinx<7.2.5",
+            "jaraco.packaging>=9.3",
+            "rst.linker>=1.9",
+            "furo",
+            "sphinx-lint",
+            "jaraco.tidelift>=1.4"
+          ],
+          "perf": [
+            "ipython"
+          ],
+          "testing": [
+            "pytest>=6",
+            "pytest-checkdocs>=2.4",
+            "pytest-cov",
+            "pytest-enabler>=2.2",
+            "pytest-ruff",
+            "packaging",
+            "pyfakefs",
+            "flufl.flake8",
+            "pytest-perf>=0.9.2",
+            "pytest-black>=0.3.7",
+            "pytest-mypy>=0.9.1",
+            "importlib-resources>=1.3"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "6.8.0": {
         "depends_by_extra": {
           "": [
@@ -19037,6 +19742,33 @@
       }
     },
     "importlib-resources": {
+      "6.1.1": {
+        "depends_by_extra": {
+          "": [
+            "zipp>=3.1.0"
+          ],
+          "docs": [
+            "sphinx>=3.5",
+            "sphinx<7.2.5",
+            "jaraco.packaging>=9.3",
+            "rst.linker>=1.9",
+            "furo",
+            "sphinx-lint",
+            "jaraco.tidelift>=1.4"
+          ],
+          "testing": [
+            "pytest>=6",
+            "pytest-checkdocs>=2.4",
+            "pytest-cov",
+            "pytest-enabler>=2.2",
+            "pytest-ruff",
+            "zipp>=3.17",
+            "pytest-black>=0.3.7",
+            "pytest-mypy>=0.9.1"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "6.1.0": {
         "depends_by_extra": {
           "": [
@@ -20815,6 +21547,14 @@
       }
     },
     "idna": {
+      "3.6": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.5"
+      },
+      "3.5": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.5"
+      },
       "3.4": {
         "depends_by_extra": {},
         "requires_python": ">=3.5"
@@ -20873,6 +21613,21 @@
       }
     },
     "urllib3": {
+      "2.1.0": {
+        "depends_by_extra": {
+          "brotli": [
+            "brotli>=1.0.9",
+            "brotlicffi>=0.8.0"
+          ],
+          "socks": [
+            "pysocks!=1.5.7,<2.0,>=1.5.6"
+          ],
+          "zstd": [
+            "zstandard>=0.18.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "2.0.7": {
         "depends_by_extra": {
           "brotli": [
@@ -22016,6 +22771,10 @@
       }
     },
     "certifi": {
+      "2023.11.17": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.6"
+      },
       "2023.7.22": {
         "depends_by_extra": {},
         "requires_python": ">=3.6"
@@ -22550,6 +23309,27 @@
       }
     },
     "wcwidth": {
+      "0.2.12": {
+        "depends_by_extra": {
+          "": [
+            "backports.functools-lru-cache>=1.2.1"
+          ]
+        }
+      },
+      "0.2.11": {
+        "depends_by_extra": {
+          "": [
+            "backports.functools-lru-cache>=1.2.1"
+          ]
+        }
+      },
+      "0.2.10": {
+        "depends_by_extra": {
+          "": [
+            "backports.functools-lru-cache>=1.2.1"
+          ]
+        }
+      },
       "0.2.9": {
         "depends_by_extra": {
           "": [
@@ -22633,6 +23413,174 @@
       }
     },
     "setuptools": {
+      "69.0.2": {
+        "depends_by_extra": {
+          "docs": [
+            "sphinx>=3.5",
+            "sphinx<7.2.5",
+            "jaraco.packaging>=9.3",
+            "rst.linker>=1.9",
+            "furo",
+            "sphinx-lint",
+            "jaraco.tidelift>=1.4",
+            "pygments-github-lexers==0.0.5",
+            "sphinx-favicon",
+            "sphinx-inline-tabs",
+            "sphinx-reredirects",
+            "sphinxcontrib-towncrier",
+            "sphinx-notfound-page<2,>=1"
+          ],
+          "testing": [
+            "pytest>=6",
+            "pytest-checkdocs>=2.4",
+            "pytest-enabler>=2.2",
+            "flake8-2020",
+            "virtualenv>=13.0.0",
+            "wheel",
+            "pip>=19.1",
+            "jaraco.envs>=2.2",
+            "pytest-xdist",
+            "jaraco.path>=3.2.0",
+            "build[virtualenv]",
+            "filelock>=3.4.0",
+            "ini2toml[lite]>=0.9",
+            "tomli-w>=1.0.0",
+            "pytest-timeout",
+            "pytest-black>=0.3.7",
+            "pytest-cov",
+            "pytest-mypy>=0.9.1",
+            "jaraco.develop>=7.21",
+            "pytest-ruff",
+            "pytest-perf"
+          ],
+          "testing-integration": [
+            "pytest",
+            "pytest-xdist",
+            "pytest-enabler",
+            "virtualenv>=13.0.0",
+            "tomli",
+            "wheel",
+            "jaraco.path>=3.2.0",
+            "jaraco.envs>=2.2",
+            "build[virtualenv]>=1.0.3",
+            "filelock>=3.4.0",
+            "packaging>=23.1"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
+      "69.0.1": {
+        "depends_by_extra": {
+          "docs": [
+            "sphinx>=3.5",
+            "sphinx<7.2.5",
+            "jaraco.packaging>=9.3",
+            "rst.linker>=1.9",
+            "furo",
+            "sphinx-lint",
+            "jaraco.tidelift>=1.4",
+            "pygments-github-lexers==0.0.5",
+            "sphinx-favicon",
+            "sphinx-inline-tabs",
+            "sphinx-reredirects",
+            "sphinxcontrib-towncrier",
+            "sphinx-notfound-page<2,>=1"
+          ],
+          "testing": [
+            "pytest>=6",
+            "pytest-checkdocs>=2.4",
+            "pytest-enabler>=2.2",
+            "flake8-2020",
+            "virtualenv>=13.0.0",
+            "wheel",
+            "pip>=19.1",
+            "jaraco.envs>=2.2",
+            "pytest-xdist",
+            "jaraco.path>=3.2.0",
+            "build[virtualenv]",
+            "filelock>=3.4.0",
+            "ini2toml[lite]>=0.9",
+            "tomli-w>=1.0.0",
+            "pytest-timeout",
+            "pytest-black>=0.3.7",
+            "pytest-cov",
+            "pytest-mypy>=0.9.1",
+            "jaraco.develop>=7.21",
+            "pytest-ruff",
+            "pytest-perf"
+          ],
+          "testing-integration": [
+            "pytest",
+            "pytest-xdist",
+            "pytest-enabler",
+            "virtualenv>=13.0.0",
+            "tomli",
+            "wheel",
+            "jaraco.path>=3.2.0",
+            "jaraco.envs>=2.2",
+            "build[virtualenv]>=1.0.3",
+            "filelock>=3.4.0",
+            "packaging>=23.1"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
+      "69.0.0": {
+        "depends_by_extra": {
+          "docs": [
+            "sphinx>=3.5",
+            "sphinx<7.2.5",
+            "jaraco.packaging>=9.3",
+            "rst.linker>=1.9",
+            "furo",
+            "sphinx-lint",
+            "jaraco.tidelift>=1.4",
+            "pygments-github-lexers==0.0.5",
+            "sphinx-favicon",
+            "sphinx-inline-tabs",
+            "sphinx-reredirects",
+            "sphinxcontrib-towncrier",
+            "sphinx-notfound-page<2,>=1"
+          ],
+          "testing": [
+            "pytest>=6",
+            "pytest-checkdocs>=2.4",
+            "pytest-enabler>=2.2",
+            "flake8-2020",
+            "virtualenv>=13.0.0",
+            "wheel",
+            "pip>=19.1",
+            "jaraco.envs>=2.2",
+            "pytest-xdist",
+            "jaraco.path>=3.2.0",
+            "build[virtualenv]",
+            "filelock>=3.4.0",
+            "ini2toml[lite]>=0.9",
+            "tomli-w>=1.0.0",
+            "pytest-timeout",
+            "pytest-black>=0.3.7",
+            "pytest-cov",
+            "pytest-mypy>=0.9.1",
+            "jaraco.develop>=7.21",
+            "pytest-ruff",
+            "pytest-perf"
+          ],
+          "testing-integration": [
+            "pytest",
+            "pytest-xdist",
+            "pytest-enabler",
+            "virtualenv>=13.0.0",
+            "tomli",
+            "wheel",
+            "jaraco.path>=3.2.0",
+            "jaraco.envs>=2.2",
+            "build[virtualenv]>=1.0.3",
+            "filelock>=3.4.0",
+            "packaging>=23.1"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "68.2.2": {
         "depends_by_extra": {
           "docs": [
@@ -35935,6 +36883,12 @@
       "1.0.6rc1": {
         "depends_by_extra": {},
         "requires_python": ">=3.8"
+      },
+      "1.0.5": {
+        "depends_by_extra": {}
+      },
+      "1.0.5rc1": {
+        "depends_by_extra": {}
       }
     },
     "pytz": {
@@ -36170,6 +37124,10 @@
     },
     "pyyaml": {
       "6.0.1": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.6"
+      },
+      "6.0": {
         "depends_by_extra": {},
         "requires_python": ">=3.6"
       }
@@ -38852,6 +39810,10 @@
       }
     },
     "typing-extensions": {
+      "4.9.0rc1": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
       "4.8.0": {
         "depends_by_extra": {},
         "requires_python": ">=3.8"
@@ -39399,6 +40361,15 @@
       }
     },
     "wheel": {
+      "0.42.0": {
+        "depends_by_extra": {
+          "test": [
+            "pytest>=6.0.0",
+            "setuptools>=65"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
       "0.41.3": {
         "depends_by_extra": {
           "test": [
@@ -40295,6 +41266,90 @@
       }
     },
     "cryptography": {
+      "41.0.7": {
+        "depends_by_extra": {
+          "": [
+            "cffi>=1.12"
+          ],
+          "docs": [
+            "sphinx>=5.3.0",
+            "sphinx-rtd-theme>=1.1.1"
+          ],
+          "docstest": [
+            "pyenchant>=1.6.11",
+            "twine>=1.12.0",
+            "sphinxcontrib-spelling>=4.0.1"
+          ],
+          "nox": [
+            "nox"
+          ],
+          "pep8test": [
+            "black",
+            "ruff",
+            "mypy",
+            "check-sdist"
+          ],
+          "sdist": [
+            "build"
+          ],
+          "ssh": [
+            "bcrypt>=3.1.5"
+          ],
+          "test": [
+            "pytest>=6.2.0",
+            "pytest-benchmark",
+            "pytest-cov",
+            "pytest-xdist",
+            "pretend"
+          ],
+          "test-randomorder": [
+            "pytest-randomly"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
+      "41.0.6": {
+        "depends_by_extra": {
+          "": [
+            "cffi>=1.12"
+          ],
+          "docs": [
+            "sphinx>=5.3.0",
+            "sphinx-rtd-theme>=1.1.1"
+          ],
+          "docstest": [
+            "pyenchant>=1.6.11",
+            "twine>=1.12.0",
+            "sphinxcontrib-spelling>=4.0.1"
+          ],
+          "nox": [
+            "nox"
+          ],
+          "pep8test": [
+            "black",
+            "ruff",
+            "mypy",
+            "check-sdist"
+          ],
+          "sdist": [
+            "build"
+          ],
+          "ssh": [
+            "bcrypt>=3.1.5"
+          ],
+          "test": [
+            "pytest>=6.2.0",
+            "pytest-benchmark",
+            "pytest-cov",
+            "pytest-xdist",
+            "pretend"
+          ],
+          "test-randomorder": [
+            "pytest-randomly"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
       "41.0.5": {
         "depends_by_extra": {
           "": [
@@ -42266,6 +43321,14 @@
       }
     },
     "wrapt": {
+      "1.16.0": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.6"
+      },
+      "1.16.0rc2": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.6"
+      },
       "1.16.0rc1": {
         "depends_by_extra": {},
         "requires_python": ">=3.6"
@@ -42275,6 +43338,10 @@
         "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
       },
       "1.15.0rc1": {
+        "depends_by_extra": {},
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+      },
+      "1.14.1": {
         "depends_by_extra": {},
         "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
       }
@@ -43189,6 +44256,13 @@
           ]
         },
         "requires_python": ">=3.8"
+      },
+      "1.15.1": {
+        "depends_by_extra": {
+          "": [
+            "pycparser"
+          ]
+        }
       }
     },
     "hanzidentifier": {
@@ -44692,6 +45766,39 @@
       }
     },
     "pygments": {
+      "2.17.2": {
+        "depends_by_extra": {
+          "plugins": [
+            "importlib-metadata"
+          ],
+          "windows-terminal": [
+            "colorama>=0.4.6"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
+      "2.17.1": {
+        "depends_by_extra": {
+          "plugins": [
+            "importlib-metadata"
+          ],
+          "windows-terminal": [
+            "colorama>=0.4.6"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
+      "2.17.0": {
+        "depends_by_extra": {
+          "plugins": [
+            "importlib-metadata"
+          ],
+          "windows-terminal": [
+            "colorama>=0.4.6"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
       "2.16.1": {
         "depends_by_extra": {
           "plugins": [
@@ -45097,6 +46204,39 @@
       }
     },
     "jsonschema": {
+      "4.20.0": {
+        "depends_by_extra": {
+          "": [
+            "attrs>=22.2.0",
+            "importlib-resources>=1.4.0",
+            "jsonschema-specifications>=2023.03.6",
+            "pkgutil-resolve-name>=1.3.10",
+            "referencing>=0.28.4",
+            "rpds-py>=0.7.1"
+          ],
+          "format": [
+            "fqdn",
+            "idna",
+            "isoduration",
+            "jsonpointer>1.13",
+            "rfc3339-validator",
+            "rfc3987",
+            "uri-template",
+            "webcolors>=1.11"
+          ],
+          "format-nongpl": [
+            "fqdn",
+            "idna",
+            "isoduration",
+            "jsonpointer>1.13",
+            "rfc3339-validator",
+            "rfc3986-validator>0.1.0",
+            "uri-template",
+            "webcolors>=1.11"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "4.19.2": {
         "depends_by_extra": {
           "": [
@@ -47645,9 +48785,41 @@
           ]
         },
         "requires_python": ">=3.8.0"
+      },
+      "0.19": {
+        "depends_by_extra": {
+          "": [
+            "typing-extensions>=3.7.4.3"
+          ],
+          "test": [
+            "flake8~=5.0.4",
+            "pycodestyle~=2.9.1",
+            "mypy==0.971",
+            "pytest~=6.2.4"
+          ]
+        },
+        "requires_python": ">=3.6"
       }
     },
     "jsonschema-specifications": {
+      "2023.11.2": {
+        "depends_by_extra": {
+          "": [
+            "importlib-resources>=1.4.0",
+            "referencing>=0.31.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
+      "2023.11.1": {
+        "depends_by_extra": {
+          "": [
+            "importlib-resources>=1.4.0",
+            "referencing>=0.31.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "2023.7.1": {
         "depends_by_extra": {
           "": [
@@ -47832,6 +49004,24 @@
       }
     },
     "referencing": {
+      "0.31.1": {
+        "depends_by_extra": {
+          "": [
+            "attrs>=22.2.0",
+            "rpds-py>=0.7.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
+      "0.31.0": {
+        "depends_by_extra": {
+          "": [
+            "attrs>=22.2.0",
+            "rpds-py>=0.7.0"
+          ]
+        },
+        "requires_python": ">=3.8"
+      },
       "0.30.2": {
         "depends_by_extra": {
           "": [
@@ -48690,6 +49880,26 @@
       }
     },
     "rpds-py": {
+      "0.13.2": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.13.1": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.13.0": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.12.0": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.11.0": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
       "0.10.6": {
         "depends_by_extra": {},
         "requires_python": ">=3.8"
@@ -48731,6 +49941,22 @@
         "requires_python": ">=3.8"
       },
       "0.8.8": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.8.7": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.8.6": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.8.4": {
+        "depends_by_extra": {},
+        "requires_python": ">=3.8"
+      },
+      "0.8.3": {
         "depends_by_extra": {},
         "requires_python": ">=3.8"
       },
@@ -48860,6 +50086,46 @@
       }
     },
     "yarl": {
+      "1.9.3": {
+        "depends_by_extra": {
+          "": [
+            "idna>=2.0",
+            "multidict>=4.0",
+            "typing-extensions>=3.7.4"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
+      "1.9.2": {
+        "depends_by_extra": {
+          "": [
+            "multidict>=4.0",
+            "idna>=2.0",
+            "typing-extensions>=3.7.4"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
+      "1.9.1": {
+        "depends_by_extra": {
+          "": [
+            "multidict>=4.0",
+            "idna>=2.0",
+            "typing-extensions>=3.7.4"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
+      "1.8.2": {
+        "depends_by_extra": {
+          "": [
+            "multidict>=4.0",
+            "idna>=2.0",
+            "typing-extensions>=3.7.4"
+          ]
+        },
+        "requires_python": ">=3.7"
+      },
       "0.4.3": {
         "depends_by_extra": {
           "": [
@@ -49393,550 +50659,5 @@
         "depends_by_extra": {}
       }
     }
-  },
-  "environment": {
-    "markers": {
-      "implementation_name": "cpython",
-      "implementation_version": "3.12.0",
-      "os_name": "posix",
-      "platform_machine": "arm64",
-      "platform_release": "22.6.0",
-      "platform_system": "Darwin",
-      "platform_version": "Darwin Kernel Version 22.6.0: Fri Sep 15 13:41:30 PDT 2023; root:xnu-8796.141.3.700.8~1/RELEASE_ARM64_T8103",
-      "python_full_version": "3.12.0",
-      "platform_python_implementation": "CPython",
-      "python_version": "3.12",
-      "sys_platform": "darwin"
-    },
-    "tags": [
-      "cp312-cp312-macosx_13_0_arm64",
-      "cp312-cp312-macosx_13_0_universal2",
-      "cp312-cp312-macosx_12_0_arm64",
-      "cp312-cp312-macosx_12_0_universal2",
-      "cp312-cp312-macosx_11_0_arm64",
-      "cp312-cp312-macosx_11_0_universal2",
-      "cp312-cp312-macosx_10_16_universal2",
-      "cp312-cp312-macosx_10_15_universal2",
-      "cp312-cp312-macosx_10_14_universal2",
-      "cp312-cp312-macosx_10_13_universal2",
-      "cp312-cp312-macosx_10_12_universal2",
-      "cp312-cp312-macosx_10_11_universal2",
-      "cp312-cp312-macosx_10_10_universal2",
-      "cp312-cp312-macosx_10_9_universal2",
-      "cp312-cp312-macosx_10_8_universal2",
-      "cp312-cp312-macosx_10_7_universal2",
-      "cp312-cp312-macosx_10_6_universal2",
-      "cp312-cp312-macosx_10_5_universal2",
-      "cp312-cp312-macosx_10_4_universal2",
-      "cp312-abi3-macosx_13_0_arm64",
-      "cp312-abi3-macosx_13_0_universal2",
-      "cp312-abi3-macosx_12_0_arm64",
-      "cp312-abi3-macosx_12_0_universal2",
-      "cp312-abi3-macosx_11_0_arm64",
-      "cp312-abi3-macosx_11_0_universal2",
-      "cp312-abi3-macosx_10_16_universal2",
-      "cp312-abi3-macosx_10_15_universal2",
-      "cp312-abi3-macosx_10_14_universal2",
-      "cp312-abi3-macosx_10_13_universal2",
-      "cp312-abi3-macosx_10_12_universal2",
-      "cp312-abi3-macosx_10_11_universal2",
-      "cp312-abi3-macosx_10_10_universal2",
-      "cp312-abi3-macosx_10_9_universal2",
-      "cp312-abi3-macosx_10_8_universal2",
-      "cp312-abi3-macosx_10_7_universal2",
-      "cp312-abi3-macosx_10_6_universal2",
-      "cp312-abi3-macosx_10_5_universal2",
-      "cp312-abi3-macosx_10_4_universal2",
-      "cp312-none-macosx_13_0_arm64",
-      "cp312-none-macosx_13_0_universal2",
-      "cp312-none-macosx_12_0_arm64",
-      "cp312-none-macosx_12_0_universal2",
-      "cp312-none-macosx_11_0_arm64",
-      "cp312-none-macosx_11_0_universal2",
-      "cp312-none-macosx_10_16_universal2",
-      "cp312-none-macosx_10_15_universal2",
-      "cp312-none-macosx_10_14_universal2",
-      "cp312-none-macosx_10_13_universal2",
-      "cp312-none-macosx_10_12_universal2",
-      "cp312-none-macosx_10_11_universal2",
-      "cp312-none-macosx_10_10_universal2",
-      "cp312-none-macosx_10_9_universal2",
-      "cp312-none-macosx_10_8_universal2",
-      "cp312-none-macosx_10_7_universal2",
-      "cp312-none-macosx_10_6_universal2",
-      "cp312-none-macosx_10_5_universal2",
-      "cp312-none-macosx_10_4_universal2",
-      "cp311-abi3-macosx_13_0_arm64",
-      "cp311-abi3-macosx_13_0_universal2",
-      "cp311-abi3-macosx_12_0_arm64",
-      "cp311-abi3-macosx_12_0_universal2",
-      "cp311-abi3-macosx_11_0_arm64",
-      "cp311-abi3-macosx_11_0_universal2",
-      "cp311-abi3-macosx_10_16_universal2",
-      "cp311-abi3-macosx_10_15_universal2",
-      "cp311-abi3-macosx_10_14_universal2",
-      "cp311-abi3-macosx_10_13_universal2",
-      "cp311-abi3-macosx_10_12_universal2",
-      "cp311-abi3-macosx_10_11_universal2",
-      "cp311-abi3-macosx_10_10_universal2",
-      "cp311-abi3-macosx_10_9_universal2",
-      "cp311-abi3-macosx_10_8_universal2",
-      "cp311-abi3-macosx_10_7_universal2",
-      "cp311-abi3-macosx_10_6_universal2",
-      "cp311-abi3-macosx_10_5_universal2",
-      "cp311-abi3-macosx_10_4_universal2",
-      "cp310-abi3-macosx_13_0_arm64",
-      "cp310-abi3-macosx_13_0_universal2",
-      "cp310-abi3-macosx_12_0_arm64",
-      "cp310-abi3-macosx_12_0_universal2",
-      "cp310-abi3-macosx_11_0_arm64",
-      "cp310-abi3-macosx_11_0_universal2",
-      "cp310-abi3-macosx_10_16_universal2",
-      "cp310-abi3-macosx_10_15_universal2",
-      "cp310-abi3-macosx_10_14_universal2",
-      "cp310-abi3-macosx_10_13_universal2",
-      "cp310-abi3-macosx_10_12_universal2",
-      "cp310-abi3-macosx_10_11_universal2",
-      "cp310-abi3-macosx_10_10_universal2",
-      "cp310-abi3-macosx_10_9_universal2",
-      "cp310-abi3-macosx_10_8_universal2",
-      "cp310-abi3-macosx_10_7_universal2",
-      "cp310-abi3-macosx_10_6_universal2",
-      "cp310-abi3-macosx_10_5_universal2",
-      "cp310-abi3-macosx_10_4_universal2",
-      "cp39-abi3-macosx_13_0_arm64",
-      "cp39-abi3-macosx_13_0_universal2",
-      "cp39-abi3-macosx_12_0_arm64",
-      "cp39-abi3-macosx_12_0_universal2",
-      "cp39-abi3-macosx_11_0_arm64",
-      "cp39-abi3-macosx_11_0_universal2",
-      "cp39-abi3-macosx_10_16_universal2",
-      "cp39-abi3-macosx_10_15_universal2",
-      "cp39-abi3-macosx_10_14_universal2",
-      "cp39-abi3-macosx_10_13_universal2",
-      "cp39-abi3-macosx_10_12_universal2",
-      "cp39-abi3-macosx_10_11_universal2",
-      "cp39-abi3-macosx_10_10_universal2",
-      "cp39-abi3-macosx_10_9_universal2",
-      "cp39-abi3-macosx_10_8_universal2",
-      "cp39-abi3-macosx_10_7_universal2",
-      "cp39-abi3-macosx_10_6_universal2",
-      "cp39-abi3-macosx_10_5_universal2",
-      "cp39-abi3-macosx_10_4_universal2",
-      "cp38-abi3-macosx_13_0_arm64",
-      "cp38-abi3-macosx_13_0_universal2",
-      "cp38-abi3-macosx_12_0_arm64",
-      "cp38-abi3-macosx_12_0_universal2",
-      "cp38-abi3-macosx_11_0_arm64",
-      "cp38-abi3-macosx_11_0_universal2",
-      "cp38-abi3-macosx_10_16_universal2",
-      "cp38-abi3-macosx_10_15_universal2",
-      "cp38-abi3-macosx_10_14_universal2",
-      "cp38-abi3-macosx_10_13_universal2",
-      "cp38-abi3-macosx_10_12_universal2",
-      "cp38-abi3-macosx_10_11_universal2",
-      "cp38-abi3-macosx_10_10_universal2",
-      "cp38-abi3-macosx_10_9_universal2",
-      "cp38-abi3-macosx_10_8_universal2",
-      "cp38-abi3-macosx_10_7_universal2",
-      "cp38-abi3-macosx_10_6_universal2",
-      "cp38-abi3-macosx_10_5_universal2",
-      "cp38-abi3-macosx_10_4_universal2",
-      "cp37-abi3-macosx_13_0_arm64",
-      "cp37-abi3-macosx_13_0_universal2",
-      "cp37-abi3-macosx_12_0_arm64",
-      "cp37-abi3-macosx_12_0_universal2",
-      "cp37-abi3-macosx_11_0_arm64",
-      "cp37-abi3-macosx_11_0_universal2",
-      "cp37-abi3-macosx_10_16_universal2",
-      "cp37-abi3-macosx_10_15_universal2",
-      "cp37-abi3-macosx_10_14_universal2",
-      "cp37-abi3-macosx_10_13_universal2",
-      "cp37-abi3-macosx_10_12_universal2",
-      "cp37-abi3-macosx_10_11_universal2",
-      "cp37-abi3-macosx_10_10_universal2",
-      "cp37-abi3-macosx_10_9_universal2",
-      "cp37-abi3-macosx_10_8_universal2",
-      "cp37-abi3-macosx_10_7_universal2",
-      "cp37-abi3-macosx_10_6_universal2",
-      "cp37-abi3-macosx_10_5_universal2",
-      "cp37-abi3-macosx_10_4_universal2",
-      "cp36-abi3-macosx_13_0_arm64",
-      "cp36-abi3-macosx_13_0_universal2",
-      "cp36-abi3-macosx_12_0_arm64",
-      "cp36-abi3-macosx_12_0_universal2",
-      "cp36-abi3-macosx_11_0_arm64",
-      "cp36-abi3-macosx_11_0_universal2",
-      "cp36-abi3-macosx_10_16_universal2",
-      "cp36-abi3-macosx_10_15_universal2",
-      "cp36-abi3-macosx_10_14_universal2",
-      "cp36-abi3-macosx_10_13_universal2",
-      "cp36-abi3-macosx_10_12_universal2",
-      "cp36-abi3-macosx_10_11_universal2",
-      "cp36-abi3-macosx_10_10_universal2",
-      "cp36-abi3-macosx_10_9_universal2",
-      "cp36-abi3-macosx_10_8_universal2",
-      "cp36-abi3-macosx_10_7_universal2",
-      "cp36-abi3-macosx_10_6_universal2",
-      "cp36-abi3-macosx_10_5_universal2",
-      "cp36-abi3-macosx_10_4_universal2",
-      "cp35-abi3-macosx_13_0_arm64",
-      "cp35-abi3-macosx_13_0_universal2",
-      "cp35-abi3-macosx_12_0_arm64",
-      "cp35-abi3-macosx_12_0_universal2",
-      "cp35-abi3-macosx_11_0_arm64",
-      "cp35-abi3-macosx_11_0_universal2",
-      "cp35-abi3-macosx_10_16_universal2",
-      "cp35-abi3-macosx_10_15_universal2",
-      "cp35-abi3-macosx_10_14_universal2",
-      "cp35-abi3-macosx_10_13_universal2",
-      "cp35-abi3-macosx_10_12_universal2",
-      "cp35-abi3-macosx_10_11_universal2",
-      "cp35-abi3-macosx_10_10_universal2",
-      "cp35-abi3-macosx_10_9_universal2",
-      "cp35-abi3-macosx_10_8_universal2",
-      "cp35-abi3-macosx_10_7_universal2",
-      "cp35-abi3-macosx_10_6_universal2",
-      "cp35-abi3-macosx_10_5_universal2",
-      "cp35-abi3-macosx_10_4_universal2",
-      "cp34-abi3-macosx_13_0_arm64",
-      "cp34-abi3-macosx_13_0_universal2",
-      "cp34-abi3-macosx_12_0_arm64",
-      "cp34-abi3-macosx_12_0_universal2",
-      "cp34-abi3-macosx_11_0_arm64",
-      "cp34-abi3-macosx_11_0_universal2",
-      "cp34-abi3-macosx_10_16_universal2",
-      "cp34-abi3-macosx_10_15_universal2",
-      "cp34-abi3-macosx_10_14_universal2",
-      "cp34-abi3-macosx_10_13_universal2",
-      "cp34-abi3-macosx_10_12_universal2",
-      "cp34-abi3-macosx_10_11_universal2",
-      "cp34-abi3-macosx_10_10_universal2",
-      "cp34-abi3-macosx_10_9_universal2",
-      "cp34-abi3-macosx_10_8_universal2",
-      "cp34-abi3-macosx_10_7_universal2",
-      "cp34-abi3-macosx_10_6_universal2",
-      "cp34-abi3-macosx_10_5_universal2",
-      "cp34-abi3-macosx_10_4_universal2",
-      "cp33-abi3-macosx_13_0_arm64",
-      "cp33-abi3-macosx_13_0_universal2",
-      "cp33-abi3-macosx_12_0_arm64",
-      "cp33-abi3-macosx_12_0_universal2",
-      "cp33-abi3-macosx_11_0_arm64",
-      "cp33-abi3-macosx_11_0_universal2",
-      "cp33-abi3-macosx_10_16_universal2",
-      "cp33-abi3-macosx_10_15_universal2",
-      "cp33-abi3-macosx_10_14_universal2",
-      "cp33-abi3-macosx_10_13_universal2",
-      "cp33-abi3-macosx_10_12_universal2",
-      "cp33-abi3-macosx_10_11_universal2",
-      "cp33-abi3-macosx_10_10_universal2",
-      "cp33-abi3-macosx_10_9_universal2",
-      "cp33-abi3-macosx_10_8_universal2",
-      "cp33-abi3-macosx_10_7_universal2",
-      "cp33-abi3-macosx_10_6_universal2",
-      "cp33-abi3-macosx_10_5_universal2",
-      "cp33-abi3-macosx_10_4_universal2",
-      "cp32-abi3-macosx_13_0_arm64",
-      "cp32-abi3-macosx_13_0_universal2",
-      "cp32-abi3-macosx_12_0_arm64",
-      "cp32-abi3-macosx_12_0_universal2",
-      "cp32-abi3-macosx_11_0_arm64",
-      "cp32-abi3-macosx_11_0_universal2",
-      "cp32-abi3-macosx_10_16_universal2",
-      "cp32-abi3-macosx_10_15_universal2",
-      "cp32-abi3-macosx_10_14_universal2",
-      "cp32-abi3-macosx_10_13_universal2",
-      "cp32-abi3-macosx_10_12_universal2",
-      "cp32-abi3-macosx_10_11_universal2",
-      "cp32-abi3-macosx_10_10_universal2",
-      "cp32-abi3-macosx_10_9_universal2",
-      "cp32-abi3-macosx_10_8_universal2",
-      "cp32-abi3-macosx_10_7_universal2",
-      "cp32-abi3-macosx_10_6_universal2",
-      "cp32-abi3-macosx_10_5_universal2",
-      "cp32-abi3-macosx_10_4_universal2",
-      "py312-none-macosx_13_0_arm64",
-      "py312-none-macosx_13_0_universal2",
-      "py312-none-macosx_12_0_arm64",
-      "py312-none-macosx_12_0_universal2",
-      "py312-none-macosx_11_0_arm64",
-      "py312-none-macosx_11_0_universal2",
-      "py312-none-macosx_10_16_universal2",
-      "py312-none-macosx_10_15_universal2",
-      "py312-none-macosx_10_14_universal2",
-      "py312-none-macosx_10_13_universal2",
-      "py312-none-macosx_10_12_universal2",
-      "py312-none-macosx_10_11_universal2",
-      "py312-none-macosx_10_10_universal2",
-      "py312-none-macosx_10_9_universal2",
-      "py312-none-macosx_10_8_universal2",
-      "py312-none-macosx_10_7_universal2",
-      "py312-none-macosx_10_6_universal2",
-      "py312-none-macosx_10_5_universal2",
-      "py312-none-macosx_10_4_universal2",
-      "py3-none-macosx_13_0_arm64",
-      "py3-none-macosx_13_0_universal2",
-      "py3-none-macosx_12_0_arm64",
-      "py3-none-macosx_12_0_universal2",
-      "py3-none-macosx_11_0_arm64",
-      "py3-none-macosx_11_0_universal2",
-      "py3-none-macosx_10_16_universal2",
-      "py3-none-macosx_10_15_universal2",
-      "py3-none-macosx_10_14_universal2",
-      "py3-none-macosx_10_13_universal2",
-      "py3-none-macosx_10_12_universal2",
-      "py3-none-macosx_10_11_universal2",
-      "py3-none-macosx_10_10_universal2",
-      "py3-none-macosx_10_9_universal2",
-      "py3-none-macosx_10_8_universal2",
-      "py3-none-macosx_10_7_universal2",
-      "py3-none-macosx_10_6_universal2",
-      "py3-none-macosx_10_5_universal2",
-      "py3-none-macosx_10_4_universal2",
-      "py311-none-macosx_13_0_arm64",
-      "py311-none-macosx_13_0_universal2",
-      "py311-none-macosx_12_0_arm64",
-      "py311-none-macosx_12_0_universal2",
-      "py311-none-macosx_11_0_arm64",
-      "py311-none-macosx_11_0_universal2",
-      "py311-none-macosx_10_16_universal2",
-      "py311-none-macosx_10_15_universal2",
-      "py311-none-macosx_10_14_universal2",
-      "py311-none-macosx_10_13_universal2",
-      "py311-none-macosx_10_12_universal2",
-      "py311-none-macosx_10_11_universal2",
-      "py311-none-macosx_10_10_universal2",
-      "py311-none-macosx_10_9_universal2",
-      "py311-none-macosx_10_8_universal2",
-      "py311-none-macosx_10_7_universal2",
-      "py311-none-macosx_10_6_universal2",
-      "py311-none-macosx_10_5_universal2",
-      "py311-none-macosx_10_4_universal2",
-      "py310-none-macosx_13_0_arm64",
-      "py310-none-macosx_13_0_universal2",
-      "py310-none-macosx_12_0_arm64",
-      "py310-none-macosx_12_0_universal2",
-      "py310-none-macosx_11_0_arm64",
-      "py310-none-macosx_11_0_universal2",
-      "py310-none-macosx_10_16_universal2",
-      "py310-none-macosx_10_15_universal2",
-      "py310-none-macosx_10_14_universal2",
-      "py310-none-macosx_10_13_universal2",
-      "py310-none-macosx_10_12_universal2",
-      "py310-none-macosx_10_11_universal2",
-      "py310-none-macosx_10_10_universal2",
-      "py310-none-macosx_10_9_universal2",
-      "py310-none-macosx_10_8_universal2",
-      "py310-none-macosx_10_7_universal2",
-      "py310-none-macosx_10_6_universal2",
-      "py310-none-macosx_10_5_universal2",
-      "py310-none-macosx_10_4_universal2",
-      "py39-none-macosx_13_0_arm64",
-      "py39-none-macosx_13_0_universal2",
-      "py39-none-macosx_12_0_arm64",
-      "py39-none-macosx_12_0_universal2",
-      "py39-none-macosx_11_0_arm64",
-      "py39-none-macosx_11_0_universal2",
-      "py39-none-macosx_10_16_universal2",
-      "py39-none-macosx_10_15_universal2",
-      "py39-none-macosx_10_14_universal2",
-      "py39-none-macosx_10_13_universal2",
-      "py39-none-macosx_10_12_universal2",
-      "py39-none-macosx_10_11_universal2",
-      "py39-none-macosx_10_10_universal2",
-      "py39-none-macosx_10_9_universal2",
-      "py39-none-macosx_10_8_universal2",
-      "py39-none-macosx_10_7_universal2",
-      "py39-none-macosx_10_6_universal2",
-      "py39-none-macosx_10_5_universal2",
-      "py39-none-macosx_10_4_universal2",
-      "py38-none-macosx_13_0_arm64",
-      "py38-none-macosx_13_0_universal2",
-      "py38-none-macosx_12_0_arm64",
-      "py38-none-macosx_12_0_universal2",
-      "py38-none-macosx_11_0_arm64",
-      "py38-none-macosx_11_0_universal2",
-      "py38-none-macosx_10_16_universal2",
-      "py38-none-macosx_10_15_universal2",
-      "py38-none-macosx_10_14_universal2",
-      "py38-none-macosx_10_13_universal2",
-      "py38-none-macosx_10_12_universal2",
-      "py38-none-macosx_10_11_universal2",
-      "py38-none-macosx_10_10_universal2",
-      "py38-none-macosx_10_9_universal2",
-      "py38-none-macosx_10_8_universal2",
-      "py38-none-macosx_10_7_universal2",
-      "py38-none-macosx_10_6_universal2",
-      "py38-none-macosx_10_5_universal2",
-      "py38-none-macosx_10_4_universal2",
-      "py37-none-macosx_13_0_arm64",
-      "py37-none-macosx_13_0_universal2",
-      "py37-none-macosx_12_0_arm64",
-      "py37-none-macosx_12_0_universal2",
-      "py37-none-macosx_11_0_arm64",
-      "py37-none-macosx_11_0_universal2",
-      "py37-none-macosx_10_16_universal2",
-      "py37-none-macosx_10_15_universal2",
-      "py37-none-macosx_10_14_universal2",
-      "py37-none-macosx_10_13_universal2",
-      "py37-none-macosx_10_12_universal2",
-      "py37-none-macosx_10_11_universal2",
-      "py37-none-macosx_10_10_universal2",
-      "py37-none-macosx_10_9_universal2",
-      "py37-none-macosx_10_8_universal2",
-      "py37-none-macosx_10_7_universal2",
-      "py37-none-macosx_10_6_universal2",
-      "py37-none-macosx_10_5_universal2",
-      "py37-none-macosx_10_4_universal2",
-      "py36-none-macosx_13_0_arm64",
-      "py36-none-macosx_13_0_universal2",
-      "py36-none-macosx_12_0_arm64",
-      "py36-none-macosx_12_0_universal2",
-      "py36-none-macosx_11_0_arm64",
-      "py36-none-macosx_11_0_universal2",
-      "py36-none-macosx_10_16_universal2",
-      "py36-none-macosx_10_15_universal2",
-      "py36-none-macosx_10_14_universal2",
-      "py36-none-macosx_10_13_universal2",
-      "py36-none-macosx_10_12_universal2",
-      "py36-none-macosx_10_11_universal2",
-      "py36-none-macosx_10_10_universal2",
-      "py36-none-macosx_10_9_universal2",
-      "py36-none-macosx_10_8_universal2",
-      "py36-none-macosx_10_7_universal2",
-      "py36-none-macosx_10_6_universal2",
-      "py36-none-macosx_10_5_universal2",
-      "py36-none-macosx_10_4_universal2",
-      "py35-none-macosx_13_0_arm64",
-      "py35-none-macosx_13_0_universal2",
-      "py35-none-macosx_12_0_arm64",
-      "py35-none-macosx_12_0_universal2",
-      "py35-none-macosx_11_0_arm64",
-      "py35-none-macosx_11_0_universal2",
-      "py35-none-macosx_10_16_universal2",
-      "py35-none-macosx_10_15_universal2",
-      "py35-none-macosx_10_14_universal2",
-      "py35-none-macosx_10_13_universal2",
-      "py35-none-macosx_10_12_universal2",
-      "py35-none-macosx_10_11_universal2",
-      "py35-none-macosx_10_10_universal2",
-      "py35-none-macosx_10_9_universal2",
-      "py35-none-macosx_10_8_universal2",
-      "py35-none-macosx_10_7_universal2",
-      "py35-none-macosx_10_6_universal2",
-      "py35-none-macosx_10_5_universal2",
-      "py35-none-macosx_10_4_universal2",
-      "py34-none-macosx_13_0_arm64",
-      "py34-none-macosx_13_0_universal2",
-      "py34-none-macosx_12_0_arm64",
-      "py34-none-macosx_12_0_universal2",
-      "py34-none-macosx_11_0_arm64",
-      "py34-none-macosx_11_0_universal2",
-      "py34-none-macosx_10_16_universal2",
-      "py34-none-macosx_10_15_universal2",
-      "py34-none-macosx_10_14_universal2",
-      "py34-none-macosx_10_13_universal2",
-      "py34-none-macosx_10_12_universal2",
-      "py34-none-macosx_10_11_universal2",
-      "py34-none-macosx_10_10_universal2",
-      "py34-none-macosx_10_9_universal2",
-      "py34-none-macosx_10_8_universal2",
-      "py34-none-macosx_10_7_universal2",
-      "py34-none-macosx_10_6_universal2",
-      "py34-none-macosx_10_5_universal2",
-      "py34-none-macosx_10_4_universal2",
-      "py33-none-macosx_13_0_arm64",
-      "py33-none-macosx_13_0_universal2",
-      "py33-none-macosx_12_0_arm64",
-      "py33-none-macosx_12_0_universal2",
-      "py33-none-macosx_11_0_arm64",
-      "py33-none-macosx_11_0_universal2",
-      "py33-none-macosx_10_16_universal2",
-      "py33-none-macosx_10_15_universal2",
-      "py33-none-macosx_10_14_universal2",
-      "py33-none-macosx_10_13_universal2",
-      "py33-none-macosx_10_12_universal2",
-      "py33-none-macosx_10_11_universal2",
-      "py33-none-macosx_10_10_universal2",
-      "py33-none-macosx_10_9_universal2",
-      "py33-none-macosx_10_8_universal2",
-      "py33-none-macosx_10_7_universal2",
-      "py33-none-macosx_10_6_universal2",
-      "py33-none-macosx_10_5_universal2",
-      "py33-none-macosx_10_4_universal2",
-      "py32-none-macosx_13_0_arm64",
-      "py32-none-macosx_13_0_universal2",
-      "py32-none-macosx_12_0_arm64",
-      "py32-none-macosx_12_0_universal2",
-      "py32-none-macosx_11_0_arm64",
-      "py32-none-macosx_11_0_universal2",
-      "py32-none-macosx_10_16_universal2",
-      "py32-none-macosx_10_15_universal2",
-      "py32-none-macosx_10_14_universal2",
-      "py32-none-macosx_10_13_universal2",
-      "py32-none-macosx_10_12_universal2",
-      "py32-none-macosx_10_11_universal2",
-      "py32-none-macosx_10_10_universal2",
-      "py32-none-macosx_10_9_universal2",
-      "py32-none-macosx_10_8_universal2",
-      "py32-none-macosx_10_7_universal2",
-      "py32-none-macosx_10_6_universal2",
-      "py32-none-macosx_10_5_universal2",
-      "py32-none-macosx_10_4_universal2",
-      "py31-none-macosx_13_0_arm64",
-      "py31-none-macosx_13_0_universal2",
-      "py31-none-macosx_12_0_arm64",
-      "py31-none-macosx_12_0_universal2",
-      "py31-none-macosx_11_0_arm64",
-      "py31-none-macosx_11_0_universal2",
-      "py31-none-macosx_10_16_universal2",
-      "py31-none-macosx_10_15_universal2",
-      "py31-none-macosx_10_14_universal2",
-      "py31-none-macosx_10_13_universal2",
-      "py31-none-macosx_10_12_universal2",
-      "py31-none-macosx_10_11_universal2",
-      "py31-none-macosx_10_10_universal2",
-      "py31-none-macosx_10_9_universal2",
-      "py31-none-macosx_10_8_universal2",
-      "py31-none-macosx_10_7_universal2",
-      "py31-none-macosx_10_6_universal2",
-      "py31-none-macosx_10_5_universal2",
-      "py31-none-macosx_10_4_universal2",
-      "py30-none-macosx_13_0_arm64",
-      "py30-none-macosx_13_0_universal2",
-      "py30-none-macosx_12_0_arm64",
-      "py30-none-macosx_12_0_universal2",
-      "py30-none-macosx_11_0_arm64",
-      "py30-none-macosx_11_0_universal2",
-      "py30-none-macosx_10_16_universal2",
-      "py30-none-macosx_10_15_universal2",
-      "py30-none-macosx_10_14_universal2",
-      "py30-none-macosx_10_13_universal2",
-      "py30-none-macosx_10_12_universal2",
-      "py30-none-macosx_10_11_universal2",
-      "py30-none-macosx_10_10_universal2",
-      "py30-none-macosx_10_9_universal2",
-      "py30-none-macosx_10_8_universal2",
-      "py30-none-macosx_10_7_universal2",
-      "py30-none-macosx_10_6_universal2",
-      "py30-none-macosx_10_5_universal2",
-      "py30-none-macosx_10_4_universal2",
-      "cp312-none-any",
-      "py312-none-any",
-      "py3-none-any",
-      "py311-none-any",
-      "py310-none-any",
-      "py39-none-any",
-      "py38-none-any",
-      "py37-none-any",
-      "py36-none-any",
-      "py35-none-any",
-      "py34-none-any",
-      "py33-none-any",
-      "py32-none-any",
-      "py31-none-any",
-      "py30-none-any"
-    ]
   }
 }
