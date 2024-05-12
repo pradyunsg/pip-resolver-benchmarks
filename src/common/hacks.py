@@ -1,6 +1,6 @@
 """This module is where I put things that I'm not proud of."""
 
-from pip._internal.exceptions import UnsupportedWheel
+from pip._internal.exceptions import UnsupportedWheel, InvalidWheel
 from pip._internal.network.lazy_wheel import dist_from_wheel_url
 from pip._internal.network.session import PipSession
 
@@ -21,6 +21,6 @@ def metadata_from_wheel_url(
     session = create_session()
     try:
         dist = dist_from_wheel_url(name=project_name, url=wheel_url, session=session)
-    except UnsupportedWheel:
+    except (UnsupportedWheel, InvalidWheel):
         return None
     return dist.read_text("METADATA")
