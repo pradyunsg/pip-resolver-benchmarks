@@ -1,5 +1,7 @@
 """This module is where I put things that I'm not proud of."""
 
+from typing import Optional
+
 from pip._internal.exceptions import UnsupportedWheel
 from pip._internal.network.lazy_wheel import dist_from_wheel_url
 from pip._internal.network.session import PipSession
@@ -13,7 +15,7 @@ def create_session() -> PipSession:
 
 def metadata_from_wheel_url(
     project_name: str, wheel_url: str, session: PipSession
-) -> str | None:
+) -> Optional[str]:
     """Get metadata from a wheel URL.
 
     I could re-implement this myself, but... this is easier.

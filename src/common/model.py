@@ -6,7 +6,7 @@ from __future__ import annotations
 import datetime
 import re
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Optional
 
 import rich
 from packaging.utils import canonicalize_version, is_normalized_name
@@ -20,13 +20,13 @@ WHEELHOUSE_DIR = _repo_root / "wheelhouse.ignore"
 
 class DistributionInfo(BaseModel):
     depends_by_extra: dict[str, list[str]]
-    requires_python: str | None = None
+    requires_python: Optional[str] = None
 
     @field_validator("depends_by_extra", mode="after")
     @classmethod
     def ensure_no_empty_extras(
-        cls, v: dict[str | None, list[str]]
-    ) -> dict[str | None, list[str]]:
+        cls, v: dict[Optional[str], list[str]]
+    ) -> dict[Optional[str], list[str]]:
         for depends in v.values():
             for dep in depends:
                 assert ";" not in dep

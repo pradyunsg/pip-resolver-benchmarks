@@ -20,7 +20,7 @@ import tempfile
 from collections import defaultdict, deque
 from pathlib import Path
 from types import TracebackType
-from typing import Annotated, Iterable, Type
+from typing import Annotated, Iterable, Optional, Type, Union
 from urllib.parse import urljoin
 
 import hishel
@@ -74,7 +74,7 @@ TAGS_SET = set(TAGS)
 ParsedWheelName: TypeAlias = tuple[NormalizedName, Version, BuildTag, frozenset[Tag]]
 ParsedSDistName: TypeAlias = tuple[NormalizedName, str]
 ParsedDistributionDetail: TypeAlias = tuple[
-    ParsedWheelName | ParsedSDistName, Annotated[str, "url to distro"]
+    Union[ParsedWheelName, ParsedSDistName], Annotated[str, "url to distro"]
 ]
 
 
@@ -188,7 +188,7 @@ class UserVisibleProgress:
 
 def _pick_best_candidate_dist(
     dist_details: list[ParsedDistributionDetail],
-) -> str | None:
+) -> Optional[str]:
     """Return the best-matching distribution from the given list.
 
     This will pick the wheel matching the earliest compatible tag, or the sdist if no
@@ -241,9 +241,9 @@ class PackageIndex:
 
     def __exit__(
         self,
-        exc_type: Type[BaseException] | None = None,
-        exc_value: BaseException | None = None,
-        traceback: TracebackType | None = None,
+        exc_type: Optional[Type[BaseException]] = None,
+        exc_value: Optional[BaseException] = None,
+        traceback: Optional[TracebackType] = None,
     ) -> None:
         self._client.__exit__(exc_type, exc_value, traceback)
 
@@ -304,7 +304,7 @@ class PackageIndex:
         project_name: str,
         version: str,
         dist_details: list[ParsedDistributionDetail],
-    ) -> Metadata | None:
+    ) -> Optional[Metadata]:
         best_matching_dist = _pick_best_candidate_dist(dist_details)
         if best_matching_dist is None:
             return None
@@ -329,7 +329,7 @@ class PackageIndex:
         project_name: str,
         dist_url: str,
         version: str,
-    ) -> Metadata | None:
+    ) -> Optional[Metadata]:
         cache_file = self.metadata_cache_dir / project_name / f"{version}-METADATA"
         if cache_file.exists():
             metadata_text = cache_file.read_text()
@@ -351,7 +351,7 @@ class PackageIndex:
 
     def _fetch_metadata_for_wheel(
         self, project_name: str, *, url: str, store_at: Path
-    ) -> Metadata | None:
+    ) -> Optional[Metadata]:
         metadata = metadata_from_wheel_url(project_name, url, self._session)
         if metadata is None:
             return None
@@ -367,7 +367,7 @@ class PackageIndex:
 
     def _fetch_metadata_for_sdist_with_pip(
         self, url: str, *, store_at: Path
-    ) -> Metadata | None:
+    ) -> Optional[Metadata]:
         failure_marker = store_at.with_name(store_at.name + ".fails")
         if failure_marker.exists():
             raise SdistFailure()
@@ -414,12 +414,12 @@ class PackageIndex:
         return parsed
 
 
-def determine_extra_from_marker(marker: Marker | None) -> str:
+def determine_extra_from_marker(marker: Optional[Marker]) -> str:
     """Return the extra that the given marker applies to."""
     if marker is None:
         return ""
 
-    def _extract_extras(expression: MarkerList | MarkerAtom | str) -> Iterable[str]:
+    def _extract_extras(expression: Union[MarkerList, MarkerAtom, str]) -> Iterable[str]:
         for item in expression:
             if isinstance(item, list):
                 yield from _extract_extras(item)
@@ -560,7 +560,7 @@ def process_all_packages(
     return scenario
 
 
-def _load_allow_sdists_file(path: Path | None) -> set[str]:
+def _load_allow_sdists_file(path: Optional[Path]) -> set[str]:
     if path is None:
         return set()
     if not path.exists():
