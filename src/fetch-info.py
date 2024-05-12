@@ -473,15 +473,16 @@ def fetch_one_package(
     # Process all the metadata
     for version, metadata in version_with_metadata.items():
         depends_by_extra: dict[str, list[str]] = {}
-        for dep in metadata.requires_dist:
-            dep_to_append = str(dep)
-            extra = determine_extra_from_marker(dep.marker)
-            if dep.marker:
-                dep_to_append, _, _ = dep_to_append.partition(";")
+        if metadata.requires_dist is not None:
+            for dep in metadata.requires_dist:
+                dep_to_append = str(dep)
+                extra = determine_extra_from_marker(dep.marker)
+                if dep.marker:
+                    dep_to_append, _, _ = dep_to_append.partition(";")
 
-            if extra not in depends_by_extra:
-                depends_by_extra[extra] = []
-            depends_by_extra[extra].append(dep_to_append)
+                if extra not in depends_by_extra:
+                    depends_by_extra[extra] = []
+                depends_by_extra[extra].append(dep_to_append)
 
         package_entry[version] = DistributionInfo(
             depends_by_extra=depends_by_extra,
