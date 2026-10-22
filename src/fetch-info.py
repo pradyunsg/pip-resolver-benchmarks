@@ -43,7 +43,7 @@ from packaging.utils import (
     canonicalize_name,
     parse_sdist_filename,
     parse_wheel_filename,
-    InvalidSdistFilename
+    InvalidSdistFilename,
 )
 from packaging.version import Version
 from rich.live import Live
@@ -288,9 +288,7 @@ class PackageIndex:
                     try:
                         sdist_name, version_t = parse_sdist_filename(filename)
                     except InvalidSdistFilename:
-                        rich.print(
-                            f"Failed to parse sdist name from file: {filename}"
-                        )
+                        rich.print(f"Failed to parse sdist name from file: {filename}")
                         continue
                     version = str(version_t)
                 dist_details[version].append(((sdist_name, version), url))

@@ -1,5 +1,4 @@
-"""Core data model.
-"""
+"""Core data model."""
 
 from __future__ import annotations
 
