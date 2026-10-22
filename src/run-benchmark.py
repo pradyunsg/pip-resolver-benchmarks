@@ -1,5 +1,4 @@
-"""Run the resolver benchmark and provide the results.
-"""
+"""Run the resolver benchmark and provide the results."""
 
 import argparse
 import os

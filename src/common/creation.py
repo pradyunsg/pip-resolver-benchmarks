@@ -1,5 +1,4 @@
-"""Creates the actual wheel files in a directory to pass to the resolver.
-"""
+"""Creates the actual wheel files in a directory to pass to the resolver."""
 
 from __future__ import annotations
 
@@ -59,9 +58,7 @@ def _make_wheel(
 
 def _write_link_listing(path: Path, links: list[str]) -> None:
     """Write a link listing file."""
-    parts = [
-        "<!DOCTYPE html>" "<html>" "<head><title>Links for all packages</title></head>"
-    ]
+    parts = ["<!DOCTYPE html><html><head><title>Links for all packages</title></head>"]
     for link in links:
         parts.append(f'<a href="{link}">{link}</a><br/>')
     parts.append("</html>")
